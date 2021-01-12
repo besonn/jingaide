@@ -1,0 +1,11 @@
+<view class="all">
+<block wx:for="{{list}}" wx:key="*this">
+<view class="box">
+    <image src="{{item.lujing}}"></image>
+    <view class="content">
+        <text>{{item.title}}</text>
+        <text class="xue">{{item.progress}}</text>
+    </view>
+</view>
+</block>
+</view>

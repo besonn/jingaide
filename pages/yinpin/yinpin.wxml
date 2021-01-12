@@ -1,0 +1,17 @@
+<!--pages/yinpin/yinpin.wxml-->
+<view class="all">
+    <block wx:for="{{kechengDataList}}" wx:for-index="idx">
+        <view class="box">
+            <image src="{{item.PIC}}"></image>
+            <view class="right">
+                <view class="content">
+                    <text>{{item.TITLE}}</text>
+                    <text class="xue">{{item.SUBTITLE}}</text>
+                </view>            
+                <button wx:if="{{item.FLAG == 1}}" bind:tap="tiao" data-id="{{idx}}">了解详情</button>
+                <button  wx:else style="background-color:lightgray">人数满额</button>
+            </view>
+        </view>
+    </block>
+   
+</view>

@@ -1,0 +1,239 @@
+/* pages/ypxq/ypxq.wxss */
+page{
+  background-color: #eee;
+}
+video{
+  width: 100%;
+  height: 422rpx;
+}
+.intro{   
+  background-color: #fff;
+  margin-bottom:16rpx;
+  height: 194rpx;
+  box-sizing:border-box;
+  padding-top:55rpx;
+  padding-bottom: 62rpx;
+  padding-left:45rpx;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.intro .title{
+  font-size:32rpx;
+  color:#333;
+}
+.intro>.content{  
+  display:flex;
+  width: 412rpx;
+  justify-content: space-between;  
+  color:#A2A2A2;
+  font-size: 20rpx;
+}
+.box{
+  height:573rpx;
+  background-color: #fff;
+}
+.ziti{
+  color:#333;
+  font-size:24rpx;
+  line-height: 78rpx;
+
+}
+.bao{
+  margin-top:28rpx;
+}
+.weui-tab__content{
+
+}
+.cell{
+  height: 62rpx;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left:46rpx;
+  color:#A9A9A9;
+  font-size:20rpx;
+  padding-right: 51rpx;
+}
+.weui-navbar{
+  position: relative;
+}
+.ff{
+  width:33%;
+  float:left;
+  text-align:center;     
+}
+.weui-navbar__slider{
+  position: absolute;
+  margin-left:30rpx;
+  width:122rpx;
+  height:3rpx;
+  background-color:#FF547C;
+  bottom:0;
+}
+.nei{
+  padding:31rpx 0 0 41rpx;
+  box-sizing: border-box;
+}
+.comcell{
+  display:flex;
+  width: 640rpx; 
+  padding-bottom:31rpx;  
+  border-bottom: 1rpx solid #EFEFEF;
+}
+.comcell>image{
+  width: 100rpx;
+  height:100rpx;
+  margin-right:32rpx;
+}
+.comcell>.r{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color:#A2A2A2;
+  font-size:24rpx;
+}
+.comcell>.r>.rtitle{
+  font-size:29rpx;
+  color:#333333;
+}
+.xiang{
+  padding-left:55rpx;
+  padding-top:58rpx;
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  height: 327rpx;
+  justify-content: space-between;
+  color:#A9A9A9;
+  font-size:22rpx;
+}
+.colore{
+color:#FF547C;
+}
+.share{
+  width: 150rpx;
+  height: 60rpx;
+  background-color: #FF547C;
+  color:#fff;
+  line-height: 60rpx;
+  font-size:30rpx;
+  margin-right:30rpx;
+}
+
+
+
+/* @import './icon.wxss'; */
+@font-face {font-family: "iconfont";
+  src: url('//at.alicdn.com/t/font_2296816_0homgqo6vlc.eot?t=1609138559791'); /* IE9 */
+  src: url('//at.alicdn.com/t/font_2296816_0homgqo6vlc.eot?t=1609138559791#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAALQAAsAAAAABsQAAAKBAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqBIIEaATYCJAMMCwgABCAFhG0HQRvrBcguoRzbUaREZeywEHvY16dXRQAnQxFQ+/HbkyffNElSjYZNJ6km90iC1mjQRbNaCe9/9/vd/z8q1YY1UU1an97t7dl29oYmD109kQqECBESkVzIom2AgIHOCfAEXFvThbPnE/dO/yigQOYDymntfT4mYBRwQHtjFFmJlBg3jF3gEu4T0GpEs9SO2eU1yJNZywLCac4syMuFZZnlakFZszcLjxXq+DB+AI/Cz4f/OssjKhJr7c5TMy6M//JTmfabfQd8QoQAHi6QMAtkwqHa9B4ZgbEyWtVZ7aWlLIhzxZqGUKwrS/sPjygQSlZ1O5hEmcgvcMWpphJK77o6gTKumASWWNr+8PdBbO/svCUfn9dUNy+aLrzd/9uqfPWu58na4vq9nRvb93Wl/c/L0g68ieY/oHVjkuY+ragMhn+ZV7OzwQRoTqdpPCTHv5FCYPkyStf+axl8KL2/B0LNGfpXqEWY5J9JenZlXWZZUlbFrtj0JkMjnREo5D4Ny9/re7x+4L6cQZ2TMESVYSS1UTIzZ1Fos4pSbROtZswdbtNHyQi5BdNOAIJu74g6PUPS7ZPMzC8UBv2h1F0GrXaFvjPbjMcLtiu0NLrE3iXcETF1bLogql1BthlaKisL2RuoEh4jHa3txdwcxqjm2JBssU6tKaFKRGQWPIZhKIhUwkdHt3pay8G2Nlr3olZHRFBgOwVZNOQibLsIziHEqD9YKyi9fwViNoUsqqWuJrgBKQk+OtGhVXsPck4d96q7l2cSW5hOmkYRlCJEiFkwC4VCAiHrZ/mQQ2vljUhKg9rsfrSvunV9bfQBRawJ64IUYkghK48JasWs5Kb1JqaYuak9jwMAAAAA') format('woff2'),
+  url('//at.alicdn.com/t/font_2296816_0homgqo6vlc.woff?t=1609138559791') format('woff'),
+  url('//at.alicdn.com/t/font_2296816_0homgqo6vlc.ttf?t=1609138559791') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('//at.alicdn.com/t/font_2296816_0homgqo6vlc.svg?t=1609138559791#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bofang:before {
+  content: "\e613";
+}
+
+.icon-zantingtingzhi:before {
+  content: "\e600";
+}
+
+
+
+page{
+  height: 40%;
+}
+.audioPalyWrap{
+  width: 100%;
+  height: 100%;
+  background-color: #06AF8F;
+  background: -webkit-linear-gradient( 135deg, rgb(142, 132, 133) 0%, rgb(230, 132, 110) 100% );
+  background: linear-gradient( 135deg, rgb(142, 132, 133) 0%, rgb(230, 132, 110) 100% );
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* overflow: hidden; */
+}
+
+.picWrap{
+  width: 50vw;
+  height: 50vw;
+  border-radius: 50%;
+  margin-left: 25vw;
+  background: url('https://s3.ax1x.com/2020/12/28/roRPPK.png') no-repeat;
+  /* background-position: -7rpx -7rpx; */
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 100rpx yellowgreen;
+
+}
+
+.pic{
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+
+}
+.pic.active{
+  animation: animate 3s linear infinite ;
+}
+
+@keyframes animate {
+  0% {
+      rotate: 0deg;
+  }
+  100% {
+      rotate: 360deg;
+  }
+}
+
+.pic image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.playControl{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 30rpx;
+  background-color: white;
+
+}
+
+.playButton{
+  width: 50rpx;
+  height: 50rpx;
+}
+.playButton text{
+  font-size: 50rpx;
+}
+.time{
+  flex:1;
+  display: flex;
+  justify-content: space-between;
+
+}
+progress{
+  width: 80%;
+  padding: 0 20rpx;
+}
+
+
+
+
+

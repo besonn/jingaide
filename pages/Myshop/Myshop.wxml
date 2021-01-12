@@ -1,0 +1,14 @@
+<!--pages/Myshop/Myshop.wxml-->
+<view class="all">
+    <block wx:for="{{DataList}}" wx:for-index="idx">
+        <view class="box">
+            <image src="{{item.PIC}}"></image>
+            <view class="right">
+                <view class="content">
+                    <text>{{item.TITLE}}</text>
+                    <text class="xue">{{item.SUBTITLE}}</text>
+                </view> 
+            </view>
+        </view>
+    </block>
+</view>

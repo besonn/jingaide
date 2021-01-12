@@ -1,0 +1,66 @@
+<video src="{{bofangData[id].lujing}}" bindended="shikan" 
+ controls autoplay enable-progress-gesture></video>
+<view class="intro">
+    <view class="title">{{bofangData[id].title}}介绍
+        <button class="share" style="float:right" bindtap="fentiao">加入</button>
+    </view>    
+    <view class="content">
+        <text>社群1</text>
+        <text>125人已加入</text>
+    </view>
+</view>
+<view class="box">
+     <view class="weui-tab">
+        <view class="weui-navbar">
+            
+                <block wx:for="{{tabs}}" wx:key="*this">
+                    <view id="{{index}}" class="ff weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+                        <view class="weui-navbar__title ziti">{{item}}</view>
+                    </view>
+                </block>
+
+           
+            <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; top:{{top}}rpx; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+        </view>
+        <view class="weui-tab__panel bao">
+            <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+                <block wx:for="{{movieList}}" wx:for-index="idx">
+                    <view data-idx="{{idx}}" class="cell {{idx == id ? 'colore' : 'a2'}}" bindtap='huan'>
+                        <view>{{item.lD}}</view>
+                        <view>{{item.tD}}</view>
+                    </view>    
+                </block>
+            </view>
+            <view class="weui-tab__content" hidden="{{activeIndex != 2}}">
+                <block wx:for="{{comData}}">
+                    <view class="nei">
+                        <view class="comcell">
+                            <image src="{{item.lujing}}"></image>
+                            <view class="r">
+                                <view class="rtitle">{{item.title}}</view>
+                                <view>{{item.subtitle}}</view>
+                            </view>
+                        </view>
+                    </view>    
+                </block>
+            </view>
+            <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+                <view class="xiang">
+                    <text>君子和而不同，</text>
+                    <text>并不期望所有人达成共识，</text>
+                    <text>青睐有思想的学术和有学术的思想碰撞！</text>
+                    <text>思想源于碰撞，</text>
+                    <text>一个人的认知只有在不断的与他人的思想进行交流中，</text>
+                    <text>才能得以改进与完善。</text>
+                    <text></text>
+                    <text></text>
+                    <text>让不同的思想能发出不同的声音，</text>
+                    <text>进行强有力的碰撞才能不断进步。</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+
+
+

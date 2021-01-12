@@ -1,0 +1,69 @@
+/* pages/mine/mine.wxss */
+page{
+    background-color: #eee;
+}
+.tou{
+    background-color: #fff;
+    height: 180rpx;
+    box-sizing: border-box;
+    padding-top:74rpx;
+    padding-bottom: 59rpx;
+    padding-left:50rpx;
+    display:flex;
+    flex-direction: row;   
+    align-items: flex-start; 
+    font-size:28rpx;
+}
+.tou>image{
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 50%;
+}
+.tou>text{
+    font-size:50rpx;
+    color:#333333; 
+    padding-left:50rpx; 
+    padding-top:20rpx;  
+}
+.med{
+    height: 100rpx;
+    padding: 52rpx;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size:28rpx;
+    color:#333333;
+    background-color: #fff;
+}
+.med>.cell{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;    
+}
+.med>.cell>image{
+    width:60rpx;
+    height:60rpx;
+}
+.content{
+    height: 400rpx;
+    padding: 52rpx;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size:28rpx;
+    color:#333333;
+    background-color: #fff;
+}
+.content>.cell{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.content>.cell>image{
+    width:14rpx;
+    height:28rpx;
+}
+
+
+

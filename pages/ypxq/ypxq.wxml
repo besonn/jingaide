@@ -1,0 +1,97 @@
+<!-- <video src="{{bofangData[id].lujing}}" bindended="shikan" 
+ controls autoplay enable-progress-gesture></video> -->
+
+ <view class='audioPalyWrap'>
+<view class='picWrap'>
+  <view class='pic {{ !onoff ? "active":"" }}'>
+  <image src='http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000'
+  mode='center'
+  ></image>
+  </view>
+</view>
+
+<view class='playControl'>
+  <view class='playButton' bindtap="handlePlayer">
+    <text class='iconfont icon-bofang' wx:if='{{ onoff }}'></text>
+    <text class='iconfont icon-zantingtingzhi' wx:else></text>
+  </view>
+  <view class='time'>
+    <text> {{ currentTime }} </text>
+    <progress percent="{{ progressTime }}" activeColor='red' backgroundColor='blue' ></progress>
+    <text> {{ totalTime }} </text>
+  </view>
+</view>
+
+<audio id='myAudio'></audio>   
+</view>
+
+
+
+<view class="intro">
+    <view class="title">{{bofangData[id].title}}音频演示
+        <button class="share" style="float:right" bindtap="fentiao" data-id="{{id}}">购买</button>
+    </view>    
+    <view class="content">
+        <text>主讲：酷老师</text>
+        <text>|</text>
+        <text>课时：{{movieList.length}}</text>
+        <text>|</text>
+        <text>562人已学习</text>
+    </view>
+</view>
+<view class="box">
+     <view class="weui-tab">
+        <view class="weui-navbar">
+            
+                <block wx:for="{{tabs}}" wx:key="*this">
+                    <view id="{{index}}" class="ff weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+                        <view class="weui-navbar__title ziti">{{item}}</view>
+                    </view>
+                </block>
+
+           
+            <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; top:{{top}}rpx; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+        </view>
+        <view class="weui-tab__panel bao">
+            <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+                <block wx:for="{{movieList}}" wx:for-index="idx">
+                    <view data-idx="{{idx}}" class="cell {{idx == id ? 'colore' : 'a2'}}" bindtap='huan'>
+                        <view>{{item.lD}}</view>
+                        <view>{{item.tD}}</view>
+                    </view>    
+                </block>
+            </view>
+            <view class="weui-tab__content" hidden="{{activeIndex != 2}}">
+                <block wx:for="{{comData}}">
+                    <view class="nei">
+                        <view class="comcell">
+                            <image src="{{item.lujing}}"></image>
+                            <view class="r">
+                                <view class="rtitle">{{item.title}}</view>
+                                <view>{{item.subtitle}}</view>
+                            </view>
+                        </view>
+                    </view>    
+                </block>
+            </view>
+            <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+                <view class="xiang">
+                    <text>我们可能经常听到“量子计算机”，</text>
+                    <text>“量子通信”，“量子密码”，“量子纠缠”这些词语，</text>
+                    <text>也经常看到很多关于这些方面的研究进展的媒体报道。</text>
+                    <text>如果你只能读懂没有技术名词的媒体报道，</text>
+                    <text>但是你却想了解更多，</text>
+                    <text>想具备足够的知识去读懂具体介绍这些工作细节的文章。</text>
+                    <text></text>
+                    <text></text>
+                    <text>那这个课程就是为你准备的！</text>
+                    <text>本课程适合对量子信息感兴趣的本科生和研究生学习，</text>
+                    <text>也欢迎研究人员一起探讨。</text>
+
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+
+

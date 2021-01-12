@@ -1,0 +1,64 @@
+<view class="luobo">
+    <swiper class="activity" previous-margin="{{previousMargin}}" next-margin="{{nextMargin}}" indicator-dots="{{indicatorDots}}"
+            autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="155"/>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+  <view class='page_row' bindtap="suo">  
+      <view class="search">  
+        <view class="df search_arr">  
+          <icon class="searchcion" size='15' type='search'></icon>  
+          <input class="" disabled placeholder="请输入关键字" value="{{searchValue}}"/>  
+        </view>  
+      </view>  
+      <view class='sousuo' style="font-family:sans-serif;font-size:13px;">搜索</view>  
+    </view> 
+<view class="hotCourse">
+    <viw class="topTitle">
+        <view class="left">
+            <image src="../../images/hot@2x.png"></image>
+        </view>
+    </viw>
+    <view class="hotImg">
+        <scroll-view scroll-x style="width:100%">
+            <block wx:for="{{hotLesson}}">
+                <view style="background-color:{{item.color}}" class="item" bindtap="items{{item.id}}"> 
+                  <text class="title">{{item.title}}</text>
+                </view>
+            </block>
+        </scroll-view>
+    </view>
+</view>
+<view class="introVideo">
+    <viw class="topTitle">
+        <image src="../../images/intro@2x.png"></image>
+        <text>推荐视频</text>
+    </viw>
+    <view class="hotImg">
+        <view class="singleBox">
+           <image src="../../images/intro-01@2x.png"></image> 
+           <text class="title">普通话口语教程</text>
+           <text class="subtitle">333人观看</text>
+        </view>
+        <view class="singleBox">
+           <image src="../../images/intro-02@2x.png"></image> 
+           <text class="title">英语交流直播</text>
+           <text class="subtitle">343人观看</text>
+        </view>
+         <view class="singleBox">
+           <image src="../../images/intro-03@2x.png"></image> 
+           <text class="title">英语四六级考试必看考点</text>
+           <text class="subtitle">463人观看</text>
+        </view>
+        <view class="singleBox">
+           <image src="../../images/intro-04@2x.png"></image> 
+           <text class="title">出国需要准备哪些？</text>
+           <text class="subtitle">333人观看</text>
+        </view>
+    </view>
+</view>
+
